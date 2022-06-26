@@ -1,5 +1,19 @@
 ## Useful one (ish) liner commands
 
+### SSH
+
+#### Port forwarding, local to remote
+
+```bash
+ssh -L <local-port>:<target-host>:<remote-port> hostname
+```
+
+e.g. connect local port 8080 to a locally listening port 8001 on myhost.com
+
+```bash
+ssh -L 8080:localhost:8001 myhost.com
+```
+
 ### python
 
 #### Instant webserver
